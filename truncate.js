@@ -13,6 +13,14 @@
 // 6. Use the join() function to convert the Array back into a String
 // 7. Return the truncated String from the Function
 
+var testFunction = function(longText, numWords) {
+    var resultArray = longText.split(" ");
+    var truncArray = resultArray.splice(0,numWords);
+    truncArray.push("...");
+    var truncText = truncArray.join(" ");
+    console.log(truncText);  
+}
+
 // This portion of the script is meant to call and display the result of your Function.
 // You do not need to change the following lines, but you may change them if you 
 // are experimenting further or pursuing stretch goals.
