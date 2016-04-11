@@ -14,10 +14,15 @@
 // 7. Return the truncated String from the Function
 
 var truncateWords = function(longText, numWords) {
+    //Split up the text and store it in an array
     var resultArray = longText.split(" ");
+    //Shorten the array, starting at index 0 and ending at index 'numWords'.  Stored result in new var
     var truncArray = resultArray.splice(0,numWords);
+    //Add elipsis to the array
     truncArray.push("...");
+    //Join the array back into a text block, store in a new var
     var truncText = truncArray.join(" ");
+    //Log it to console
     console.log(truncText);  
 }
 
