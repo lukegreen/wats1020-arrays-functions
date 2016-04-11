@@ -13,7 +13,7 @@
 // 6. Use the join() function to convert the Array back into a String
 // 7. Return the truncated String from the Function
 
-var testFunction = function(longText, numWords) {
+var truncateWords = function(longText, numWords) {
     var resultArray = longText.split(" ");
     var truncArray = resultArray.splice(0,numWords);
     truncArray.push("...");
